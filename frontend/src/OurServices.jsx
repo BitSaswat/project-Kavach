@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import { ArrowRight } from 'lucide-react'; 
 
 const features = [
-  // ... (Feature data remains the same)
+ 
   {
     title: "EMAIL CLASSIFIER",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
@@ -24,12 +24,9 @@ const features = [
 export default function OurServices() {
   return (
     
-    <div 
-      className="min-h-screen bg-[#0B182B] text-white flex flex-col items-center"
-      
-    >
+    <div>
 
-      <div className="absolute inset-0 bg-[#0B182B]/80 z-0"></div> 
+      <div className="absolute inset-0 bg-[#0B182B]/80 z-0">
  
       <Navbar/>
 
@@ -45,7 +42,7 @@ export default function OurServices() {
 
         <div className="text-center mb-16 mt-8">
           <h1 className="text-4xl md:text-5xl font-extrabold text-cyan-400 drop-shadow-lg mb-2">
-            HELLO, ANAND!!
+            HELLO, USER!!
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 font-medium">
             WHAT YOU WANT ME TO DO TODAY?
@@ -67,7 +64,7 @@ export default function OurServices() {
                 hover:border-cyan-400 
                 transition-all duration-300 
                 flex items-center justify-between gap-4
-                backdrop-blur-sm  /* Added for the glass effect on cards */
+                backdrop-blur-sm 
               "
             >
               <div className="flex-grow">
@@ -85,7 +82,7 @@ export default function OurServices() {
                 rounded-full 
                 flex items-center justify-center 
                 shadow-lg shadow-cyan-500/30 
-                hover:scale-105 hover:shadow-cyan-400/50 
+                
                 transition-all duration-200
               ">
                 <ArrowRight className="w-8 h-20 text-white" />
@@ -95,6 +92,7 @@ export default function OurServices() {
         </div>
       </main>
       </section>
+      </div> 
     </div>
   );
 }
